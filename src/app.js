@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter'
 import configureStore from './store/configureStore';
+
 import './styles/style.scss';
 import 'normalize.css/normalize.css';
+import 'react-dates/lib/css/_datepicker.css'
+
 
 const store = configureStore();
 
