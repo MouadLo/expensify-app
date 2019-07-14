@@ -7,7 +7,7 @@
   "scripts": {
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "test": "jest",
+    "test": "cross-env NODE_ENV=test jest",
     "dev-server": "webpack-dev-server",
     "build-babel": "babel src/app.js --out-file=public/script/app.js --presets=env,react --watch",
     "start": "node server/server.js",
@@ -22,6 +22,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "bundle-loader": "^0.5.6",
+    "cross-env": "^5.2.0",
     "css-loader": "^3.0.0",
     "express": "^4.17.1",
     "firebase": "^6.3.0",
@@ -51,11 +52,13 @@
   },
   "devDependencies": {
     "chalk": "^2.4.2",
+    "dotenv": "^8.0.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.3.5",
     "jest": "^24.8.0",
     "react-test-renderer": "^16.8.6",
+    "redux-mock-store": "^1.5.3",
     "webpack-dev-server": "^3.7.2"
   },
   "jest": {
