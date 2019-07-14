@@ -7,7 +7,9 @@ import configureStore from './store/configureStore';
 import './styles/style.scss';
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css'
+import './firebase/firebase';
 
+import './playground/promises';
 
 const store = configureStore();
 
