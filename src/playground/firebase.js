@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+/* import * as firebase from 'firebase';
 import moment from 'moment';
 import * as expensesActions from '../actions/expenses';
 
@@ -19,7 +19,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
-
+ */
 
 // child_removed
 database.ref('expenses')
