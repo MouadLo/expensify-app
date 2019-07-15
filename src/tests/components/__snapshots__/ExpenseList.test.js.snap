@@ -16,9 +16,6 @@ exports[`should render ExpenseList with expenses 1`] = `
   <h1>
     Expense List
   </h1>
-  <p>
-    No expenses found
-  </p>
   <_default
     amount={195}
     createdAt={0}

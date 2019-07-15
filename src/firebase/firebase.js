@@ -13,10 +13,12 @@ const firebaseConfig = {
     appId:process.env.FIREBASE_APP_ID
 };
 
-console.log("NODE_ENV",process.env.NODE_ENV) 
+
 firebase.initializeApp(firebaseConfig);
 
 
 const database = firebase.database();
-
-export { firebase, database as default }
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+googleAuthProvider.addScope('profile');
+googleAuthProvider.addScope('email');
+export { firebase, googleAuthProvider, database as default }
